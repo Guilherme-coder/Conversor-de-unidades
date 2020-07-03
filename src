@@ -1,0 +1,2 @@
+print("Bem-vindo ao conversor de unidades.")
+print("Digite a operação que você deseja fazer\n(1)Binário -> Decimal\n(2)Decimal -> binário")
