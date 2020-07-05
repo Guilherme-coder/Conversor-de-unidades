@@ -3,12 +3,20 @@ newNumber = 0
 print("Bem-vindo ao conversor de unidades.")
 print("Digite a operação que você deseja fazer\n(1)Binário -> Decimal\n(2)Decimal -> Binário")
 operation = int(input())
-print("Muito bem, agora digite o número que você quer converter até 1111 ou 15: ")
-number = str(input())
-number1 = int(number[0])
-number2 = int(number[1])
-number3 = int(number[2])
-number4 = int(number[3])
 if operation == 1:
+    print("Muito bem, agora digite o número que você quer converter até 1111: ")
+    number = str(input())
+    number1 = int(number[0])
+    number2 = int(number[1])
+    number3 = int(number[2])
+    number4 = int(number[3])
     newNumber = number4*1 + number3*2 + number2*4 + number1*8
-    print(f"{number} convertido para decimal é {newNumber}")
+    print(f"{number} convertido para decimal é {newNumber}.")
+elif operation == 2:
+    print("Muito bem, agora digite o número que você quer converter até 15: ")
+    number = int(input())
+    newNumber0 = number%2
+    newNumber1 = (number//2)%2
+    newNumber2 = ((number//2)//2)%2
+    newNumber3 = ((number//2)//2)//2
+    print(f"{number} convertido para binário é {newNumber3}{newNumber2}{newNumber1}{newNumber0}.")
