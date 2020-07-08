@@ -4,7 +4,7 @@ newNumber = 0
 print("Bem-vindo ao conversor de unidades.")
 print()
 while(cond != "sair"):
-    print("Digite a operação que você deseja fazer\n(1)Binário -> Decimal\n(2)Decimal -> Binário\n(3)Hexadecimal -> Decimal")
+    print("Digite a operação que você deseja fazer\n(1)Binário -> Decimal\n(2)Decimal -> Binário\n(3)Hexadecimal -> Decimal\n(4)Decimal -> Hexadecimal")
     operation = int(input())
     if (operation == 1):
         print("Muito bem, agora digite o número que você quer converter até 11111111, com 8 casas: ")
@@ -23,7 +23,7 @@ while(cond != "sair"):
             number7 = int(number[6])
             number8 = int(number[7])
             newNumber = number8*1 + number7*2 + number6*4 + number5*8 + number4*16 + number3*32 + number2*64 + number1*128
-            print(f"{number} convertido para decimal é {newNumber}.")
+            print(f"{number} convertido para decimal é >>{newNumber}<<.")
     elif (operation == 2):
         print("Muito bem, agora digite o número que você quer converter até 255: ")
         number = int(input())
@@ -39,7 +39,7 @@ while(cond != "sair"):
             newNumber5 = number//32%2
             newNumber6 = number//64%2
             newNumber7 = number//128
-            print(f"{number} convertido para binário é {newNumber7}{newNumber6}{newNumber5}{newNumber4}{newNumber3}{newNumber2}{newNumber1}{newNumber0}.")
+            print(f"{number} convertido para binário é >>{newNumber7}{newNumber6}{newNumber5}{newNumber4}{newNumber3}{newNumber2}{newNumber1}{newNumber0}<<.")
     elif (operation == 3):
         print("Muito bem, digite o número que quer converter até FF, com 2 casas: ")
         number = str(input())
@@ -76,7 +76,7 @@ while(cond != "sair"):
             number1 = int(number1)
             number2 = int(number2)
             newNumber = number1*16 + number2
-            print(f"{number} convertido para decimal é {newNumber}.") 
+            print(f"{number} convertido para decimal é >>{newNumber}<<.") 
     elif (operation == 4):
             print("Digite o número que você quer converter até 255: ")
             number = int(input())
@@ -112,7 +112,7 @@ while(cond != "sair"):
                     number2 = "E"
                 elif(number2 == "15"):
                     number2 = "F"
-                print(f"{number} convertido para hexadecimal é {number1}{number2}")
+                print(f"{number} convertido para hexadecimal é >>{number1}{number2}<<.")
     print("Se quiser encerrar a calculadora digite 'sair'")
     cond = str(input())
     print()
