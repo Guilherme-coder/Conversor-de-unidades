@@ -3,4 +3,5 @@
 
 ### Como testar?
 
-1. Clone o repositório, abra a pasta no terminal e execute o comando **python3 src.py**
+1. Clone o repositório, abra a pasta no terminal e execute o comando **python3 src.py** ou execute na sua IDE preferida.
+
